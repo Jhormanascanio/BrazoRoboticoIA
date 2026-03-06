@@ -1,0 +1,40 @@
+{
+  "shoulder": {
+    "canal": 0,
+    "pulso_neutral": 1700,
+    "pulso_hold": 1700,
+    "tiempo_max_arriba": 6.01,
+    "tiempo_max_abajo": 5.84,
+    "evaluacion": 1,
+    "timestamp": "2025-11-17 calibrado"
+  },
+  "elbow": {
+    "canal": 1,
+    "pulso_neutral": 1720,
+    "pulso_hold": 1850,
+    "tiempo_max_extender": 5.27,
+    "tiempo_max_contraer": 0.56,
+    "evaluacion": 1,
+    "timestamp": "2025-11-17 calibrado con compensación gravedad"
+  },
+  "wrist": {
+    "canal": 2,
+    "pulso_neutral": 1682,
+    "pulso_hold": 1800,
+    "tiempo_max_horario": 1.86,
+    "tiempo_max_antihorario": 1.94,
+    "evaluacion": 1,
+    "timestamp": "2025-11-17 calibrado con compensación"
+  },
+  "gripper": {
+    "canal": 3,
+    "pulso_neutral": 1690,
+    "pulso_hold": 1690,
+    "pulso_abrir": 2300,
+    "pulso_cerrar": 1100,
+    "tiempo_max_abrir": 0.61,
+    "tiempo_max_cerrar": 0.61,
+    "evaluacion": 1,
+    "timestamp": "2025-11-17 calibrado"
+  }
+}

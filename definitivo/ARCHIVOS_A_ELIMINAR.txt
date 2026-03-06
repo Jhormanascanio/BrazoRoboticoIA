@@ -1,0 +1,108 @@
+==============================================
+ARCHIVOS OBSOLETOS/DUPLICADOS A ELIMINAR
+==============================================
+
+📁 arm_system/ - Scripts de calibración obsoletos (ya tienes servo_config.json calibrado):
+----------------------------
+❌ ajustar_trimmer.py - INNECESARIO (servos sin trimmer)
+❌ calibrate_continuous.py - DUPLICADO
+❌ calibrate_continuous_correct.py - DUPLICADO  
+❌ calibrate_servos.py - OBSOLETO
+❌ calibrate_servo_simple.py - OBSOLETO
+❌ test_servos_posicionales.py - OBSOLETO (servos continuos, no posicionales)
+❌ diagnostic_definitivo.py - YA USADO (diagnóstico completado)
+❌ move_calibrated.py - OBSOLETO
+
+⚠️ MANTENER:
+✅ calibrar_forzado.py - Script calibración manual (por si necesitas recalibrar)
+✅ test_calibracion.py - Para verificar pulsos calibrados
+
+📁 arm_system/ - Scripts de control duplicados:
+----------------------------
+❌ web.py - DUPLICADO de web_control.py
+❌ test_hardware.py - BÁSICO (ya tienes test_detection_web.py completo)
+❌ test_camera_preview.py - BÁSICO
+❌ test_detection_realtime.py - DUPLICADO (test_detection_web.py es más completo)
+❌ manual_control.py - NO USADO
+❌ autonomous_control.py - NO USADO
+❌ emergency_stop.py - NO USADO
+
+⚠️ MANTENER:
+✅ test_detection_web.py - PRINCIPAL (sistema completo)
+✅ web_control.py - Control web
+✅ main.py - Punto de entrada
+
+📁 arm_system/ - Módulos vacíos/sin usar:
+----------------------------
+❌ ai/ (carpeta vacía, solo __init__.py)
+❌ planning/ (carpeta vacía, solo __init__.py)
+❌ voice/ (carpeta vacía, solo __init__.py)
+❌ ui/ (carpeta vacía, solo __init__.py)
+❌ vex_brain/ (no usas VEX Brain)
+❌ mapping/occupancy_grid.py (no implementado)
+
+⚠️ MANTENER:
+✅ control/ - robot_controller.py (ESENCIAL)
+✅ communication/ - serial_manager.py
+✅ perception/vision/ - Detección YOLO (ESENCIAL)
+
+📁 course/ - Carpeta completa (material de curso/pruebas):
+----------------------------
+❌ course/ COMPLETA - No es parte del sistema productivo
+   - comm_class/
+   - vision_class/
+   - Documentación técnica
+
+📁 tests/ - Carpeta de tests (vacía):
+----------------------------
+❌ tests/ (solo __init__.py, no hay tests)
+
+==============================================
+RESUMEN ELIMINACIÓN PROPUESTA:
+==============================================
+
+SCRIPTS A ELIMINAR (15 archivos):
+1. ajustar_trimmer.py
+2. calibrate_continuous.py
+3. calibrate_continuous_correct.py
+4. calibrate_servos.py
+5. calibrate_servo_simple.py
+6. test_servos_posicionales.py
+7. diagnostic_definitivo.py
+8. move_calibrated.py
+9. web.py
+10. test_hardware.py
+11. test_camera_preview.py
+12. test_detection_realtime.py
+13. manual_control.py
+14. autonomous_control.py
+15. emergency_stop.py
+
+CARPETAS A ELIMINAR:
+1. course/ (completa con todo su contenido)
+2. tests/ (completa con todo su contenido)
+3. arm_system/ai/
+4. arm_system/planning/
+5. arm_system/voice/
+6. arm_system/ui/
+7. arm_system/vex_brain/
+8. arm_system/mapping/
+
+ARCHIVOS A MANTENER (ESENCIALES):
+✅ servo_config.json - Configuración pulsos calibrados
+✅ calibrar_forzado.py - Por si necesitas recalibrar
+✅ test_calibracion.py - Verificar calibración
+✅ test_detection_web.py - Sistema principal
+✅ web_control.py - Control web
+✅ main.py - Punto entrada
+✅ control/robot_controller.py - CORE del sistema
+✅ communication/serial_manager.py
+✅ perception/vision/ - Detección YOLO completa
+✅ requirements.txt
+
+==============================================
+¿CONFIRMAS ELIMINACIÓN?
+==============================================
+
+Si confirmas, ejecutaré los comandos para eliminar estos archivos.
+Esto liberará espacio y dejará solo lo necesario para el sistema.
